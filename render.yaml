@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: my-flask-app
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "python main.py"
+    ports: 5000
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.x
