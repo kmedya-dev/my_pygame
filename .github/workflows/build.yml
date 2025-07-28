@@ -13,6 +13,9 @@ jobs:
       with:
         python-version: '3.x'
     
+    - name: Make build.sh executable
+      run: chmod +x build.sh
+    
     - name: Run guessing_game.py
       run: python guessing_game.py
     
