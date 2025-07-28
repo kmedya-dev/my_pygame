@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Text Adventure Game</title>
+    <title>{{ game_title }}</title>
     <style>
         body {
             background-color: #1a1a1a;
@@ -30,7 +30,7 @@
     </style>
 </head>
 <body>
-    <h1>Text Adventure Game</h1>
+    <h1>{{ game_title }}</h1>
     <p>{{ message }}</p>
     <form method="POST" action="/play">
         <input type="text" name="choice" placeholder="{{ placeholder_text }}">
